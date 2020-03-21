@@ -1,0 +1,56 @@
+.container-calculatrice {
+    border: solid 1px rgb(34, 34, 34);
+    width: 500px;
+    min-height: 500px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas: "a b c d"
+                         "e f g h"
+                         "i j k l"
+                         "m n o p"
+                         "q q r s";
+    width: 500px;
+    height: 400px;
+    bottom: 0px;
+}
+
+.container-grid div {
+    border: solid 1px rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.a, .b, .c {
+    background-color: rgb(59, 59, 59);
+}
+
+.d, .h, .l, .p, .s {
+    background-color: rgb(255, 153, 0);
+}
+
+.e, .f, .g, .i, .j, .k, .m, .n, .o, .r {
+    background-color: rgb(107, 107, 107);
+}
+
+.q {
+    background-color: rgb(104, 104, 104);
+    grid-area: q;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;
+}
+
+.btnZero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 1.8em;
+    padding-left: 20px;
+}
